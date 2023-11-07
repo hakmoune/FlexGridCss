@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* box-sizing: border-box; On l'utilises pour inclure le padding et le bordure dans la taille de la div*/
+
+    font-family: 'Poppins';
+}
+
+body {
+    margin-top: 8em;
+}
+
+.navBar {
+    width: 100%;
+    background: #343541;
+    position: fixed;
+    top: 0;
+}
+
+nav {
+    width: 80%;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-right: 2em;
+    padding: 0.5em 0;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 2em;
+}
+
+nav li a:hover,
+.current {
+    color: #19c37d;
+    font-weight: 700;
+}
+
+
+
+/* Container 1 */
+.container-1 {
+    width: 80%;
+    margin: 1em auto;
+    padding: 1em 2em;
+    border-radius: .5em;
+    background: #efefef;
+    display: flex;
+    flex-direction: row-reverse;
+    /*flex-direction: column;*/
+    /*flex-direction: column-reverse;*/
+    /*justify-content: space-around;*/
+    /*justify-content: space-evenly;*/
+    /* la deference entre space around and evenly c'est l'espace entre le container et l'Item avec space evenly en va avoir le meme espace*/
+}
+
+.item-1 {
+    background: #007af3;
+    color: white;
+    font-weight: bold;
+    padding: .5em 1em;
+    border-radius: .3em;
+    font-size: 2em;
+    margin: 0.5em;
+}
+
+
+
+/* Container 2 */
+.container-2 {
+    width: 80%;
+    height: 300px;
+    margin: 1em auto;
+    padding: 1em 2em;
+    border-radius: .5em;
+    background: #efefef;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+.item-2 {
+    background: #007af3;
+    color: white;
+    font-weight: bold;
+    padding: .5em 1em;
+    border-radius: .3em;
+    font-size: 2em;
+    margin: 0.5em;
+    height: 30%;
+}
+
+
+
+/* Container 3 */
+.container-3 {
+    width: 80%;
+    margin: 1em auto;
+    padding: 1em 2em;
+    border-radius: .5em;
+    background: #efefef;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+
+.item-3 {
+    background: #007af3;
+    color: white;
+    font-weight: bold;
+    padding: .5em 1em;
+    border-radius: .3em;
+    font-size: 2em;
+    margin: 0.5em;
+    width: 30%;
+}
+
+
+
+/* Container 4 */
+.container-4 {
+    width: 80%;
+    margin: 1em auto;
+    padding: 1em 2em;
+    border-radius: .5em;
+    background: #efefef;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+}
+
+.item-4 {
+    background: #007af3;
+    color: white;
+    font-weight: bold;
+    padding: .5em 1em;
+    border-radius: .3em;
+    font-size: 2em;
+    margin: 0.5em;
+}
+
+
+
+
+/* Container 5 */
+.container-5 {
+    width: 80%;
+    height: 300px;
+    margin: 1em auto;
+    padding: 1em 2em;
+    border-radius: .5em;
+    background: #efefef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-5 {
+    background: #007af3;
+    color: white;
+    font-weight: bold;
+    padding: .5em 1em;
+    border-radius: .3em;
+    font-size: 2em;
+    margin: 0.5em;
+    height: 30%;
+}
+
+.item-22 {
+    align-self: flex-start;
+}
+
+.item-26 {
+    align-self: flex-end;
+}
+
+
+
+/* Container 6 ORDER*/
+.container-6 {
+    width: 80%;
+    margin: 1em auto;
+    padding: 1em 2em;
+    border-radius: .5em;
+    background: #efefef;
+    display: flex;
+    justify-content: center;
+}
+
+.item-6 {
+    background: #007af3;
+    color: white;
+    font-weight: bold;
+    padding: .5em 1em;
+    border-radius: .3em;
+    font-size: 2em;
+    margin: 0.5em;
+}
+
+.item-29 {
+    order: 0;
+}
+
+.item-28 {
+    order: 1;
+}
+
+.item-30 {
+    order: 2;
+}
+
+.item-27 {
+    order: 3;
+}
+
+
+
+/* Container 7 flex-grow*/
+.container-7 {
+    width: 80%;
+    margin: 1em auto;
+    padding: 1em 2em;
+    border-radius: .5em;
+    background: #efefef;
+    display: flex;
+    justify-content: center;
+}
+
+.item-7 {
+    background: #007af3;
+    color: white;
+    font-weight: bold;
+    padding: .5em 1em;
+    border-radius: .3em;
+    font-size: 2em;
+    margin: 0.5em;
+    flex-grow: 1;
+}
+
+.item-33 {
+    flex-grow: 3;
+}
+
+
+
+/* Container 8 flex-basis*/
+.container-8 {
+    width: 80%;
+    margin: 1em auto;
+    padding: 1em 2em;
+    border-radius: .5em;
+    background: #efefef;
+    display: flex;
+    flex-wrap: wrap;
+    height: 500px;
+    align-content: space-between;
+    /*align-content: Nous pouvons jouer avec tous le contenu et no pas que les elements*/
+}
+
+.item-8 {
+    background: #007af3;
+    color: white;
+    font-weight: bold;
+    padding: .5em 1em;
+    border-radius: .3em;
+    font-size: 2em;
+    margin: 0.5em;
+    flex: 1;
+    height: 20%;
+}
+
+.item-38 {
+    flex-basis: 50%;
+}
+
+
+/* Container 8 flex-wrap*/
+.container-9 {
+    width: 80%;
+    margin: 1em auto;
+    padding: 1em 2em;
+    border-radius: .5em;
+    background: #efefef;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.item-9 {
+    background: #007af3;
+    color: white;
+    font-weight: bold;
+    padding: .5em 1em;
+    border-radius: .3em;
+    font-size: 2em;
+    margin: 0.5em;
+}
