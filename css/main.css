@@ -268,6 +268,7 @@ nav li a:hover,
     height: 500px;
     align-content: space-between;
     /*align-content: Nous pouvons jouer avec tous le contenu et no pas que les elements*/
+    /*This works only when there are multiple lines of flex items.*/
 }
 
 .item-8 {
@@ -307,4 +308,125 @@ nav li a:hover,
     border-radius: .3em;
     font-size: 2em;
     margin: 0.5em;
+}
+
+
+
+/* Grid System *****************************************/
+.wrraper-1 div,
+.wrraper-2 div,
+.wrraper-3 div {
+    background: #eeeeee;
+    padding: 1em;
+    width: auto;
+    height: auto;
+    /*min-height: 300px;*/
+    font-size: 1.2em;
+    border-radius: .5em;
+}
+
+.wrraper-1 div:nth-child(odd),
+.wrraper-2 div:nth-child(odd),
+.wrraper-3 div:nth-child(odd) {
+    background: #ddd;
+}
+
+.wrraper-1 {
+    display: grid;
+    margin: 2em;
+    grid-template-columns: 1fr 1fr 1fr;
+    /*grid-template-columns: 70% 30%;*/
+    column-gap: 2em;
+    row-gap: 2em;
+    /*gap: 2em;*/
+    /*grid-auto-rows: minmax(100px, auto);*/
+}
+
+.wrraper-2 {
+    display: grid;
+    margin: 10em 2em;
+    grid-template-columns: repeat(4, 1fr 2fr);
+    /*grid-template-columns: repeat(4, 1fr)*/
+    gap: 2em;
+}
+
+.wrraper-3 {
+    display: grid;
+    margin: 10em 2em;
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+    gap: 2em;
+    grid-auto-rows: 150px;
+}
+
+.wrraper-4 {
+    padding: 2em;
+    font-size: 1.2em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+    gap: 2em;
+    grid-auto-rows: minmax(400px, auto);
+    /* = min-height*/
+    /*grid-auto-rows: 150px; = height*/
+}
+
+.wrraper-4 div {
+    padding: 2em;
+    background-color: #eeeeee;
+    border-radius: .5em;
+    text-align: center;
+}
+
+.nested {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    gap: .5em;
+    grid-auto-rows: 30%;
+}
+
+.nested div {
+    border-radius: unset;
+    background-color: unset;
+    padding: unset;
+    border: 1px solid gray;
+    border-radius: .3em;
+}
+
+.wrraper-5 {
+    width: 90%;
+    min-height: 400px;
+    margin: 2em auto;
+    background: #eeeeee;
+    border-radius: .5em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /*grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));*/
+}
+
+.wrraper-5 .box {
+    padding: 2em;
+    background: #007af3;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 2em;
+    border-radius: .5em;
+    text-align: center;
+    margin: 1em;
+}
+
+.box1 {
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+
+.box2 {
+    grid-row: 1/4;
+}
+
+.box3 {
+    grid-column: 1/3;
+}
+
+.box4 {
+    grid-column: 1/4;
 }
