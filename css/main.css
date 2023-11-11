@@ -430,3 +430,41 @@ nav li a:hover,
 .box4 {
     grid-column: 1/4;
 }
+
+
+/** TEST GRID AND GLEX BOX**/
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+}
+
+.flex,
+.grid {
+    width: 90%;
+    height: auto;
+    margin: 2em auto;
+    padding: 2em;
+    background-color: #eeeeee;
+    border-radius: .5em;
+}
+
+.item {
+    font-weight: 700;
+    font-size: 1.5em;
+    color: white;
+    padding: 2em;
+    background: #007af3;
+    margin: .5em;
+    border-radius: .5em;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
